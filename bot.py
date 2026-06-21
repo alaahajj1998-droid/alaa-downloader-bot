@@ -6,7 +6,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQu
 import yt_dlp
 
 # ضع التوكن الجديد هنا بعد ما تجدده من BotFather
-BOT_TOKEN = "ضع_التوكن_الجديد_هنا"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 # ==================== رسالة الترحيب ====================
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
